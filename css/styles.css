@@ -137,8 +137,8 @@ ul {
 .header {
   display: flex;
   align-items: center;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 
 /* Current page */
@@ -196,7 +196,7 @@ ul {
   background-color: var(--active-color);
 }
 
-/* Main titiles and texts */
+/* /* Main titles, texts, sections */
 .title {
   font-weight: 500;
   font-size: 20px;
@@ -208,6 +208,15 @@ ul {
 .text {
   line-height: 1.5;
 }
+
+.feature-section {
+  padding-top: 120px;
+}
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 /* What are we doing and Our Team titles */
 .section-title {
   font-weight: 700;
@@ -218,14 +227,60 @@ ul {
 
   margin-bottom: 72px;
 }
+
+/* Features in flex */
+.features {
+  display: flex;
+}
+
+.feature-point:not(:last-child) {
+  margin-right: 24px;
+}
+
+/* What are we doing in flex */
+.products {
+  display: flex;
+  margin-bottom: 120px;
+}
+.product-img:not(:last-child) {
+  margin-right: 24px;
+}
+
 /* Our Team */
 .team {
   background-color: var(--light-bg);
 }
 
+/* Team cards with flex */
+.cards {
+  display: flex;
+}
+.card-img {
+  margin-bottom: 32px;
+}
+.cards .item {
+  min-width: 264px;
+
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+}
+.cards .item:not(:last-child) {
+  margin-right: 24px;
+}
+/* Card text */
+.centered {
+  text-align: center;
+}
+.inside {
+  margin-bottom: 32px;
+}
+
 /* Footer */
 .footer {
   background-color: var(--dark-bg);
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .footer-logo {
   font-family: Raleway, sans-serif;
@@ -242,6 +297,9 @@ ul {
 }
 .footer-text {
   margin-top: 16px;
+
+  width: 264px;
+
   line-height: 1.5;
   color: #e7e9fc;
 }
@@ -274,9 +332,4 @@ ul {
 .portfolio-link {
   text-decoration: none;
   color: inherit;
-}
-
-/* Cards */
-.card-img {
-  margin-bottom: 32px;
 }
