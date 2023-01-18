@@ -70,6 +70,7 @@ h6 {
 p,
 ul {
   margin: 0;
+  padding: 0;
 }
 
 /* Hidden headers */
@@ -92,12 +93,17 @@ ul {
 }
 
 /* Site Navigation */
+
+/* Navigation in flex */
 .nav {
   display: flex;
 }
 
 .nav .item:not(:last-child) {
   margin-right: 40px;
+}
+.nav .item:last-child {
+  margin-right: 332px;
 }
 
 .link-nav {
@@ -110,6 +116,29 @@ ul {
 .link-nav:hover,
 .link-nav:focus {
   color: var(--active-color);
+}
+
+/* Contacts in flex */
+.list.contact {
+  display: flex;
+}
+
+.list .contact:not(:last-child) {
+  margin-right: 40px;
+}
+
+/* Header in flex */
+.header-text {
+  display: flex;
+}
+.header-text .logo {
+  margin-right: 76px;
+}
+.header {
+  display: flex;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 /* Current page */
